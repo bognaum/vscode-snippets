@@ -1,0 +1,52 @@
+{
+	// Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"<table ...": {
+		"scope": "html",
+		"prefix": "Tab",
+		"body": [
+			"table[border=\"\" cellpadding=\"${1:5}\" cellspacing=\"0\"]>tbody>tr*${2:5}>td.trn+td*${3:5}"
+		],
+		"description": "<table ..."
+	},
+	"<a target=\"_blank\" href=\"#\">#</a>": {
+		"scope": "html",
+		"prefix": "a",
+		"body": [
+			"<a target=\"${1:_blank}\" href=\"${3:${2:#}}\">${4:${2:}}</a>"
+		],
+		"description": "<a target=\"_blank\" href=\"#\">#</a>"
+	},
+	"<link rel=\"shortcut icon\" href=\"favicon.ico\" ...": {
+		"scope": "html",
+		"prefix": "Favicon-2",
+		"body": [
+			"<link rel=\"shortcut icon\" href=\"favicon.ico\" type=\"image/x-icon\">",
+			"<!-- images/x-icon; images/png; images/svg+xml -->"
+		],
+		"description": "<link rel=\"shortcut icon\" href=\"\" type=\"image/x-icon\">"
+	},
+	"<link rel=\"shortcut icon\" ...": {
+		"scope": "html",
+		"prefix": "Favicon",
+		"body": [
+			"<link rel=\"shortcut icon\"  type=\"images/${1|x-icon,png,svg+xml|}\" ",
+			"\thref=\"${2:favicon.ico}\">"
+		],
+		"description": "<link rel=\"shortcut icon\" href=\"\" type=\"image/x-icon\">"
+	},
+}
