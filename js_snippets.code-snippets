@@ -144,7 +144,7 @@
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
 		"prefix": "f",
 		"body": [
-			"${2:async }function $3($4) {$0}"
+			"${2|function,!function,async function,function *,async function *|} $3($4)$5 {$0}"
 		],
 		"description": "function () {}"
 	},
