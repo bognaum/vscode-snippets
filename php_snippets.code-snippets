@@ -29,9 +29,32 @@
 	},
 	"?><?": {
 		"scope": "php",
-		"prefix": "?>",
+		"prefix": "?<",
 		"body": ["?>$0<?php"],
 		"description": "?><?",
+	},
+	"?>HTML<?": {
+		"scope": "php",
+		"prefix": "?h",
+		"body": ["?>$0<?php"],
+		"description": "?>HTML<?",
+	},
+	"function": {
+		"scope": "php",
+		"prefix": "f",
+		"body": [
+			"function $1 ($2)",
+			"{$0}"
+		],
+		"description": "function ... ()"
+	},
+	"foreach": {
+		"scope": "php",
+		"prefix": "foreach",
+		"body": [
+			"foreach (\\$${1:variable} as${2: \\$${3:k} =>} \\$${4:v}) {$0}"
+		],
+		"description": "foreach ($variable as $k => $v) {}"
 	},
 
 
