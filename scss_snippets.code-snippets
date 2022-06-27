@@ -20,12 +20,9 @@
 		"scope": "scss",
 		"prefix": "&:nth-child(1)",
 		"body": [
-			"",
-			"$1",
 			"&:nth-child(1) {",
-			"\t$1$0",
+			"\t$0",
 			"}",
-			"",
 		],
 		"description": "&:nth-child(1)"
 	},
@@ -33,12 +30,9 @@
 		"scope": "scss",
 		"prefix": "&:nth-last-child(1)",
 		"body": [
-			"",
-			"$1",
 			"&:nth-last-child(1) {",
-			"\t$1$0",
+			"\t$0",
 			"}",
-			"",
 		],
 		"description": "&:nth-last-child(1)"
 	},
@@ -75,5 +69,44 @@
 			"",
 		],
 		"description": "&:hover, &:active"
+	},
+	"@media width $bp1 $bp2 ...": {
+		"scope": "scss",
+		"prefix": "@w",
+		"body": [
+			"@media (max-width: \\$bp1) {}",
+			"@media (min-width: (\\$bp2 +1)) {}",
+			"@media (min-width: (\\$bp3 +1)) {}",
+			"@media (min-width: (\\$bp4 +1)) {}",
+			"@media (min-width: (\\$bp5 +1)) {}",
+			"@media (min-width: (\\$bp6 +1)) {}",
+			"@media (min-width: (\\$bp7 +1)) {}",
+		],
+		"description": "@media width $bp1 $bp2 ..."
+	},
+	
+	"@media (min-width: \\$BP){}": {
+		"scope": "scss",
+		"prefix": "@BP",
+		"body": [
+			"@media (min-width: \\$BP${1:1}) {$0}",
+		],
+		"description": "@media (min-width: ...){}"
+	},
+	"@media (max-width: \\$bp){}": {
+		"scope": "scss",
+		"prefix": "@bp",
+		"body": [
+			"@media (max-width: \\$bp${1:1}) {$0}",
+		],
+		"description": "@media (max-width: ...){}"
+	},
+	"@media (min-width: \\$BP1) and (max-width: \\$bp2){}": {
+		"scope": "scss",
+		"prefix": "@BP1...bp2",
+		"body": [
+			"@media (min-width: \\$BP${1:1) and (max-width: \\$bp${2:2) {$0}",
+		],
+		"description": "@media (min-width: ...) and (max-width: ...){}"
 	},
 }
