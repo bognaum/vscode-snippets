@@ -136,6 +136,18 @@
 		"body": ["querySelectorAll(\".$2\")"],
 		"description": "querySelectorAll(\".\")"
 	},
+	"capture last created element": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "CaptureElem",
+		"body": ["document.all[document.all.length - ${1:1}]"],
+		"description": "capture last created element"
+	},
+	"el.getBoundingClientRect()": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "BCR",
+		"body": ["${1:el}.getBoundingClientRect()"],
+		"description": "el.getBoundingClientRect()"
+	},
 	
 	
 	
@@ -210,19 +222,6 @@
 	
 	
 	// ...
-	"capture last created element": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
-		"prefix": "CaptureElem",
-		"body": ["document.all[document.all.length - ${1:1}]"],
-		"description": "capture last created element"
-	},
-	"el.getBoundingClientRect()": {
-		"scope": "javascript,typescript,javascriptreact,typescriptreact",
-		"prefix": "BCR",
-		"body": ["${1:el}.getBoundingClientRect()"],
-		"description": "el.getBoundingClientRect()"
-	},
-	
 	"\"use strict\";": {
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
 		"prefix": "US",
