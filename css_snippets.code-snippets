@@ -24,16 +24,16 @@
 		],
 		"description": "@media (hover: ...){}"
 	},
-	"@media W grid 2": {
+	"@media width grid 2": {
 		"scope": "css,scss,less",
 		"prefix": "@W2",
 		"body": [
 			"@media (max-width: ${1|360,375,390,393,412,414,600,601,768,800,810,834,962,1024,1280,1366,1440,1536,1600,1920,2560|}) {}",
 			"@media (min-width: calc($1 + 1px)) {}",
 		],
-		"description": "@media W grid 2"
+		"description": "@media width grid 2"
 	},
-	"@media W grid 3": {
+	"@media width grid 3": {
 		"scope": "css,scss,less",
 		"prefix": "@W3",
 		"body": [
@@ -41,9 +41,9 @@
 			"@media (min-width: calc($1 + 1px)) and (max-width: ${2|360,375,390,393,412,414,600,601,768,800,810,834,962,1024,1280,1366,1440,1536,1600,1920,2560|}) {}",
 			"@media (min-width: calc($2 + 1px)) {}",
 		],
-		"description": "@media W grid 3"
+		"description": "@media width grid 3"
 	},
-	"@media W grid 4": {
+	"@media width grid 4": {
 		"scope": "css,scss,less",
 		"prefix": "@W4",
 		"body": [
@@ -52,9 +52,9 @@
 			"@media (min-width: calc($2 + 1px)) and (max-width: ${3|360,375,390,393,412,414,600,601,768,800,810,834,962,1024,1280,1366,1440,1536,1600,1920,2560|}) {}",
 			"@media (min-width: calc($3 + 1px)) {}",
 		],
-		"description": "@media W grid 4"
+		"description": "@media width grid 4"
 	},
-	"@media W grid 5": {
+	"@media width grid 5": {
 		"scope": "css,scss,less",
 		"prefix": "@W5",
 		"body": [
@@ -64,9 +64,9 @@
 			"@media (min-width: calc($3 + 1px)) and (max-width: ${4|360,375,390,393,412,414,600,601,768,800,810,834,962,1024,1280,1366,1440,1536,1600,1920,2560|}) {}",
 			"@media (min-width: calc($4 + 1px)) {}",
 		],
-		"description": "@media W grid 5"
+		"description": "@media width grid 5"
 	},
-	"@media W grid 6": {
+	"@media width grid 6": {
 		"scope": "css,scss,less",
 		"prefix": "@W6",
 		"body": [
@@ -77,9 +77,9 @@
 			"@media (min-width: calc($4 + 1px)) and (max-width: ${5|360,375,390,393,412,414,600,601,768,800,810,834,962,1024,1280,1366,1440,1536,1600,1920,2560|}) {}",
 			"@media (min-width: calc($5 + 1px)) {}",
 		],
-		"description": "@media W grid 6"
+		"description": "@media width grid 6"
 	},
-	"@media W grid 7": {
+	"@media width grid 7": {
 		"scope": "css,scss,less",
 		"prefix": "@W7",
 		"body": [
@@ -91,6 +91,6 @@
 			"@media (min-width: calc($5 + 1px)) and (max-width: ${6|360,375,390,393,412,414,600,601,768,800,810,834,962,1024,1280,1366,1440,1536,1600,1920,2560|}) {}",
 			"@media (min-width: calc($6 + 1px)) {}",
 		],
-		"description": "@media W grid 7"
+		"description": "@media width grid 7"
 	},
 }
