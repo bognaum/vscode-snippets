@@ -16,46 +16,6 @@
 	// 	"description": "Log output to console"
 	// }
 
-	"@media (min-width: ...){}": {
-		"scope": "css,scss,less",
-		"prefix": "@|w",
-		"body": [
-			"@media (min-width: ${1|360,375,390,393,412,414,600,601,768,800,810,834,962,1024,1280,1366,1440,1536,1600,1920|}px) {$0}",
-		],
-		"description": "@media (min-width: ...){}"
-	},
-	"@media (max-width: ...){}": {
-		"scope": "css,scss,less",
-		"prefix": "@w|",
-		"body": [
-			"@media (max-width: ${1|359,374,389,392,411,413,599,600,767,799,809,833,961,1023,1279,1365,1439,1535,1599,1919|}px) {$0}",
-		],
-		"description": "@media (max-width: ...){}"
-	},
-	"@media (min-width: ...) and (max-width: ...){}": {
-		"scope": "css,scss,less",
-		"prefix": "@|w...w|",
-		"body": [
-			"@media (min-width: ${1|1,360,375,390,393,412,414,600,601,768,800,810,834,962,1024,1280,1366,1440,1536,1600,1920|}px) and (max-width: ${2|359,374,389,392,411,413,599,600,767,799,809,833,961,1023,1279,1365,1439,1535,1599,1919|}px) {$0}",
-		],
-		"description": "@media (min-width: ...) and (max-width: ...){}"
-	},
-	"@media (min-width: CLIPBOARD) and (max-width: ...){}": {
-		"scope": "css,scss,less",
-		"prefix": "@CL...",
-		"body": [
-			"@media (min-width: ${CLIPBOARD:xxx}) and (max-width: ${2|359,374,389,392,411,413,599,600,767,799,809,833,961,1023,1279,1365,1439,1535,1599,1919|}px) {$0}",
-		],
-		"description": "@media (min-width: ...) and (max-width: ...){}"
-	},
-	"@media (min-width: ...) and (max-width: CLIPBOARD){}": {
-		"scope": "css,scss,less",
-		"prefix": "@...CL",
-		"body": [
-			"@media (min-width: ${1|1,360,375,390,393,412,414,600,601,768,800,810,834,962,1024,1280,1366,1440,1536,1600,1920|}px) and (max-width: ${CLIPBOARD:xxx}) {$0}",
-		],
-		"description": "@media (min-width: ...) and (max-width: ...){}"
-	},
 	"@media (hover: ...){}": {
 		"scope": "css,scss,less",
 		"prefix": "@hover",
