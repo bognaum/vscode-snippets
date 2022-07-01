@@ -258,4 +258,24 @@
 		"body": ["setInterval(() => {$2}, ${1:1000 * 60});"],
 		"description": "setInterval(...)"
 	},
+
+	// if else
+	"if () {} else {}": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "if",
+		"body": ["if ($1) {$0} else {}"],
+		"description": "if () {} else {}"
+	},
+	"else {}": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "else",
+		"body": ["else {$0}"],
+		"description": "else {}"
+	},
+	"else if () {}": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "elif",
+		"body": ["else if ($1) {$0}"],
+		"description": "else if () {}"
+	},
 }
