@@ -36,6 +36,24 @@
 		],
 		"description": "&:nth-last-child(1)"
 	},
+	"&:nth-child(1) {}": {
+		"scope": "scss",
+		"prefix": "&f",
+		"body": [
+			"&:nth-child(1) {}",
+			"\t$0",
+			"}",
+		],
+		"description": "&:nth-child(1) {$0}"
+	},
+	"&:nth-last-child(1) {}": {
+		"scope": "scss",
+		"prefix": "&l",
+		"body": [
+			"&:nth-last-child(1) {$0}",
+		],
+		"description": "&:nth-last-child(1) {}"
+	},
 	"Between elements": {
 		"scope": "scss",
 		"prefix": "Btw",
