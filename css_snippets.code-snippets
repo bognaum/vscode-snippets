@@ -24,6 +24,15 @@
 		],
 		"description": "@media (hover: ...){}"
 	},
+	"@media (pointer: ...){}": {
+		"scope": "css,scss,less",
+		"prefix": "@pointer",
+		"body": [
+			"@media (pointer: ${2|true,false|}) {$0}",
+		],
+		"description": "@media (pointer: ...){}"
+	},
+
 	"@media width grid 2": {
 		"scope": "css,scss,less",
 		"prefix": "@W2",

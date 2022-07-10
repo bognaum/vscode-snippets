@@ -88,21 +88,4 @@
 		],
 		"description": "&:hover, &:active"
 	},
-	"@media width $bp1 $bp2 ...": {
-		"scope": "scss",
-		"prefix": "@W$bpX",
-		"body": [
-			"@media (max-width: \\$bp1) {}",
-			"@media (min-width: (\\$bp1 +1)) and (max-width: \\$bp2)$1 {}",
-			"@media (min-width: (\\$bp2 +1)) and (max-width: \\$bp3)$1 {}",
-			"@media (min-width: (\\$bp3 +1)) and (max-width: \\$bp4)$1 {}",
-			"@media (min-width: (\\$bp4 +1)) and (max-width: \\$bp5)$1 {}",
-			"@media (min-width: (\\$bp5 +1)) and (max-width: \\$bp6)$1 {}",
-			"@media (min-width: (\\$bp6 +1)) and (max-width: \\$bp7)$1 {}",
-			"@media (min-width: (\\$bp7 +1)) and (max-width: \\$bp8)$1 {}",
-			"@media (min-width: (\\$bp8 +1)) and (max-width: \\$bp9)$1 {}$2",
-			"@media (min-width: (\\$bp9 +1)) {}",
-		],
-		"description": "@media width $bp1 $bp2 ..."
-	},
 }
