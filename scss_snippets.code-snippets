@@ -54,29 +54,6 @@
 		],
 		"description": "&:nth-last-child(1) {}"
 	},
-	"Between elements": {
-		"scope": "scss",
-		"prefix": "Btw",
-		"body": [
-			"",
-			"$1",
-			"&:nth-child(1) {",
-			"\t$1$0",
-			"}",
-			"",
-		],
-		"description": "Between elements"
-	},
-	"Space between elements": {
-		"scope": "scss",
-		"prefix": "Space between",
-		"body": [
-			"${0:/*        ${1|margin,padding|} ${2|left,top|} ${4|px,em,%,rem,vw,vh,vmin,vmax|} */}",
-			"$1-$2: ${3:10}$4;",
-			"&:nth-child(1) {$1-$2: 0$4;}",
-		],
-		"description": "Space between elements"
-	},
 	"&:hover, &:active": {
 		"scope": "scss",
 		"prefix": "&:hover, &:active",
