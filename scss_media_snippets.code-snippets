@@ -58,4 +58,80 @@
 		"body": "${1|360,375,390,393,412,414,600,601,768,800,810,834,962,1024,1280,1366,1440,1536,1600,1920,2560|}px",
 		"description": "list of the most popular screen widths"
 	},
+
+
+	"@mixin -w- (.1) {...}": {
+		"scope": "scss",
+		"prefix": "-w.1",
+		"body": [
+			"@include -w- (${1:.1}) {$0}"
+		],
+		"description": "@mixin -w- (.1) {...}"
+	},
+	"@mixin -w- (1) {...}": {
+		"scope": "scss",
+		"prefix": "-w1",
+		"body": [
+			"@include -w- (${1:.1}) {$0}"
+		],
+		"description": "@mixin -w- (1) {...}"
+	},
+	"@mixin -w- (-1) {...}": {
+		"scope": "scss",
+		"prefix": "-w-1",
+		"body": [
+			"@include -w- (${1:-1}) {$0}"
+		],
+		"description": "@mixin -w- (.1) {...}"
+	},
+
+	"@mixin -w- (.2) {...}": {
+		"scope": "scss",
+		"prefix": "-w.2",
+		"body": [
+			"@include -w- (${1:.2}) {$0}"
+		],
+		"description": "@mixin -w- (.2) {...}"
+	},
+	"@mixin -w- (2) {...}": {
+		"scope": "scss",
+		"prefix": "-w2",
+		"body": [
+			"@include -w- (${1:.2}) {$0}"
+		],
+		"description": "@mixin -w- (2) {...}"
+	},
+	"@mixin -w- (-2) {...}": {
+		"scope": "scss",
+		"prefix": "-w-2",
+		"body": [
+			"@include -w- (${1:-2}) {$0}"
+		],
+		"description": "@mixin -w- (.2) {...}"
+	},
+
+	"@mixin -w- (.3) {...}": {
+		"scope": "scss",
+		"prefix": "-w.3",
+		"body": [
+			"@include -w- (${1:.3}) {$0}"
+		],
+		"description": "@mixin -w- (.1) {...}"
+	},
+	"@mixin -w- (3) {...}": {
+		"scope": "scss",
+		"prefix": "-w3",
+		"body": [
+			"@include -w- (${1:.3}) {$0}"
+		],
+		"description": "@mixin -w- (1) {...}"
+	},
+	"@mixin -w- (-3) {...}": {
+		"scope": "scss",
+		"prefix": "-w-3",
+		"body": [
+			"@include -w- (${1:-3}) {$0}"
+		],
+		"description": "@mixin -w- (.1) {...}"
+	},
 }
