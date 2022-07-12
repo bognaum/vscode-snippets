@@ -28,9 +28,12 @@
 		"scope": "scss",
 		"prefix": "@mixin -w-",
 		"body": [
-			"@use \"sass:list\";$1",
+			"@use \"sass:list\";",
 			"@mixin -w- (\\$a:0, \\$b:0) {",
-			"\t\\$bps: \\$${2:breakpoints};",
+			"\t\\$bps: \\$breakpoints;",
+			"\t@if (0 < \\$a and \\$a < 1 and \\$b == 0) {",
+			"\t\t\\$b: \\$a * 10; \\$a: 0;",
+			"\t}",
 			"\t@if (\\$a == 0 and \\$b == 0) {",
 			"\t\t@content;",
 			"\t} @else if (\\$a == 0) {",
@@ -45,6 +48,7 @@
 			"\t\t@media (min-width: \\$bp-) and (max-width: \\$-bp) { @content; }",
 			"\t}",
 			"}",
+			"\\$breakpoints: 360px 375px 390px 393px 412px 414px 600px 601px 768px 800px 810px 834px 962px 1024px 1280px 768px 1280px 1366px 1440px 1536px 1600px 1920px 2560px;",
 		],
 		"description": "@mixin -w- (...) {...}"
 	},
