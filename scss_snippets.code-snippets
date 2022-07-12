@@ -40,9 +40,7 @@
 		"scope": "scss",
 		"prefix": "&f",
 		"body": [
-			"&:nth-child(1) {}",
-			"\t$0",
-			"}",
+			"&:nth-child(1) {$0}",
 		],
 		"description": "&:nth-child(1) {$0}"
 	},
