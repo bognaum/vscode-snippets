@@ -56,10 +56,8 @@
 		"scope": "scss",
 		"prefix": "&:hover, &:active",
 		"body": [
-			"",
 			"&:hover  {$0}",
 			"&:active {}",
-			"",
 		],
 		"description": "&:hover, &:active"
 	},
