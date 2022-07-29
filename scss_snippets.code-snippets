@@ -61,4 +61,49 @@
 		],
 		"description": "&:hover, &:active"
 	},
+	"@mixin ...": {
+		"scope": "scss",
+		"prefix": "mix",
+		"body": "@mixin $1($2) {$0}"
+	},
+	"@include ...": {
+		"scope": "scss",
+		"prefix": "i",
+		"body": "@include ",
+		"description": "@include ..."
+	},
+	"@if () {} @else if {}": {
+		"scope": "scss",
+		"prefix": "if",
+		"body": [
+			"@if ($1) {$0} @else ${2:if ()} {}"
+		],
+		"description": "@if () {} @else if {}"
+	},
+	"@debug ...": {
+		"scope": "scss",
+		"prefix": "deb",
+		"body": [
+			"@debug "
+		],
+		"description": "@debug ..."
+	},
+	"@import ...": {
+		"scope": "scss",
+		"prefix": "imp",
+		"body": [
+			"@import \"$1\";"
+		],
+		"description": "@import ..."
+	},
+	"@hover-scale ...": {
+		"scope": "scss",
+		"prefix": "hover-scale",
+		"body": [
+			"transition: transform .1s linear;",
+			"&:hover  {transform: scale(1.1);}",
+			"&:active {transform: scale(0.9);}",
+		],
+		"description": "@hover-scale ..."
+	},
 }
