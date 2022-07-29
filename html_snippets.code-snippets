@@ -49,4 +49,22 @@
 		],
 		"description": "<link rel=\"shortcut icon\" href=\"\" type=\"image/x-icon\">"
 	},
+	"&...;": {
+		"scope": "html",
+		"prefix": "&",
+		"body": "&${1|nbsp,lt,gt,infin,amp,quot,apos,sup2,sup3,frac14,frac12,frac34,Delta,larr,uarr,rarr,darr,harr,crar,lArr,uArr,rArr,dArr,hArr,larr,lArr,uarr,uArr,rarr,rArr,darr,dArr,harr,hArr,crar|};",
+		"description": "&...;"
+	},
+	"&#...;": {
+		"scope": "html",
+		"prefix": "&#",
+		"body": "&#${1:};",
+		"description": "&#...;"
+	},
+	"&nbsp;...": {
+		"scope": "html",
+		"prefix": " ",
+		"body": "${1|&nbsp;,&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |}",
+		"description": "&nbsp;..."
+	},
 }
