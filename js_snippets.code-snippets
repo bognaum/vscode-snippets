@@ -215,9 +215,23 @@
 	// Export ESM
 	"export default ...": {
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
-		"prefix": "ED",
-		"body": ["export default "],
-		"description": "export default ..."
+		"prefix": "ex",
+		"body": ["export ${1:default} "]
+	},
+	"import ... from ...": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "im",
+		"body": ["import $1 from '$2';"]
+	},
+	"await import(...)": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "im()",
+		"body": ["await import('$1');"]
+	},
+	"import(...).then(...)": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "im().",
+		"body": ["import('$1').then(($2) => {$0});"]
 	},
 	
 	
