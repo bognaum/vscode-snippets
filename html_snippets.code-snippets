@@ -69,16 +69,16 @@
 	},
 
 	// script
-	"script:src": {
+	"<script src=\"...\"></script>": {
 		"scope": "html",
-		"prefix": "script",
-		"body": "<script type=\"${1|text/javascript,module}\" src=\"$2\"></script>",
+		"prefix": "script:src",
+		"body": "<script type=\"${1|text/javascript,module|}\" src=\"$2\"></script>",
 		"description": "<script src=\"...\"></script>"
 	},
-	"script:inline": {
+	"<script>...</script>": {
 		"scope": "html",
-		"prefix": "script",
-		"body": "<script type=\"${1|text/javascript,module}\">$0</script>",
+		"prefix": "script:inline",
+		"body": "<script type=\"${1|text/javascript,module|}\">$0</script>",
 		"description": "<script>...</script>"
 	},
 }
