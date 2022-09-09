@@ -67,4 +67,18 @@
 		"body": "${1|&nbsp;,&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |}",
 		"description": "&nbsp;..."
 	},
+
+	// script
+	"script:src": {
+		"scope": "html",
+		"prefix": "script",
+		"body": "<script type=\"${1|text/javascript,module}\" src=\"$2\"></script>",
+		"description": "<script src=\"...\"></script>"
+	},
+	"script:inline": {
+		"scope": "html",
+		"prefix": "script",
+		"body": "<script type=\"${1|text/javascript,module}\">$0</script>",
+		"description": "<script>...</script>"
+	},
 }
