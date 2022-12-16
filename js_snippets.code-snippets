@@ -78,6 +78,12 @@
 		"body": ["console.groupEnd();"],
 		"description": "console.group"
 	},
+	"console.trace in group": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "Cgt",
+		"body": ["console.groupCollapsed(\"${1:TRACE}\"),console.trace(),console.groupEnd();"],
+		"description": "console.trace in group"
+	},
 	"console.time": {
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
 		"prefix": "Cti",
@@ -274,6 +280,12 @@
 	},
 
 	// if else
+	"if () {}": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "if",
+		"body": ["if ($1) {$0}"],
+		"description": "if () {}"
+	},
 	"if () {} else {}": {
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
 		"prefix": "if",
