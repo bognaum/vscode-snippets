@@ -20,9 +20,11 @@
 		"scope": "javascriptreact,typescriptreact",
 		"prefix": "!",
 		"body": [
-			"${1:export default }function ${2:ComponentName}(props) {",
+			"import ${1:R} from 'react';",
+			"",
+			"export default function ${2:MyComponent} (${3:props}) {",
 			"\treturn (",
-			"\t\t<${3:div} className=\"${4:}\">${0:}</${3:div}>",
+			"\t\t${3:}",
 			"\t);",
 			"}",
 		],
@@ -34,10 +36,16 @@
 		"body": ["on${1:Event}={() => {${2:}}}"],
 		"description": "React onEvent"
 	},
+	"React useState": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "UST",
+		"body": ["[${CLIPBOARD:}, set${CLIPBOARD/^(.)(.*)/${1:/upcase}$2/}] = ${3:R.}useState(${4:initial})"],
+		"description": "React useState"
+	},
 	"React useState 2": {
 		"scope": "javascriptreact,typescriptreact",
-		"prefix": "useState",
-		"body": ["[${TM_SELECTED_TEXT:}, set${TM_SELECTED_TEXT/^(.)(.*)/${1:/upcase}$2/}] = useState(${4:initial})"],
+		"prefix": "USt",
+		"body": ["[${TM_SELECTED_TEXT:}, set${TM_SELECTED_TEXT/^(.)(.*)/${1:/upcase}$2/}] = ${3:R.}useState(${4:initial})"],
 		"description": "React useState"
 	},
 }
