@@ -1,0 +1,116 @@
+{
+	// Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"!": {
+		"scope": "vue",
+		"prefix": "!",
+		"body": [
+			"<template>${0:xxx}</template>",
+			"<script>",
+			"\texport default {",
+			"\t\tname: \"${2:Component}\",",
+			"",
+			"\t\tprops: [],",
+			"\t\tdata() {",
+			"\t\t\treturn {};",
+			"\t\t},",
+			"\t\tcomputed: {},",
+			"\t\tmethods: {},",
+			"\t\tcomponents: {},",
+			"\t\twatch: {},",
+			"",
+			"\t\t// beforeCreate() {},",
+			"\t\t// created() {},",
+			"\t\t// beforeMount() {},",
+			"\t\t// mounted() {},",
+			"\t\t// beforeUpdate() {},",
+			"\t\t// updated() {},",
+			"\t\t// beforeUnmount() {},",
+			"\t\t// unmounted() {},",
+			"\t\t",
+			"\t\t// activated() {},",
+			"\t\t// deactivated() {},",
+			"\t\t",
+			"\t\t// errorCaptured() {},",
+			"\t\t// renderTracked() {},",
+			"\t\t// renderTriggered() {},",
+			"",
+			"\t\t// directives: {},",
+			"\t}",
+			"</script>",
+			"<style lang=\"${1:scss}\" scoped></style>",
+		],
+		"description": "Vue one file component"
+	},
+	"Vue component": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "vue!",
+		"body": [
+			"export default {",
+			"\tname: \"Component\",",
+			"",
+			"\tprops: [],",
+			"\tdata() {",
+			"\t\treturn {};",
+			"\t},",
+			"\tcomputed: {},",
+			"\tmethods: {},",
+			"\tcomponents: {},",
+			"\twatch: {},",
+			"",
+			"\t// beforeCreate() {},",
+			"\t// created() {},",
+			"\t// beforeMount() {},",
+			"\t// mounted() {},",
+			"\t// beforeUpdate() {},",
+			"\t// updated() {},",
+			"\t// beforeUnmount() {},",
+			"\t// unmounted() {},",
+			"\t,",
+			"\t// activated() {},",
+			"\t// deactivated() {},",
+			"\t,",
+			"\t// errorCaptured() {},",
+			"\t// renderTracked() {},",
+			"\t// renderTriggered() {},",
+			"",
+			"\t// template: {},",
+			"",
+			"\t// directives: {},",
+			"}",
+		],
+		"description": "Vue component"
+	},
+	"!store-vue": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "!store-vue",
+		"body": [
+			"import * as vuex from 'vuex';",
+			"",
+			"export default vuex.createStore({",
+			"\tstate() {",
+			"\t\treturn {};",
+			"\t},",
+			"\tgetters: {},",
+			"\tmutations: {},",
+			"\tactions: {},",
+			"});",
+		],
+		"description": "Vue store"
+	},
+}
